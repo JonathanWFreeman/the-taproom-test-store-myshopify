@@ -1,0 +1,29 @@
+# Password, theme_id, and store variables are required.
+#
+# For more information on this config file:
+# https://shopify.github.io/themekit/commands/#configure
+
+development:
+  password: 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
+  theme_id: 107663261864
+  store: https://the-taproom-test-store.myshopify.com
+  ignores: -themekit.ignores
+  ignore_files:
+    - config/settings_data.json
+    - config/settings_schema.json
+# staging:
+#   password: [your-api-password]
+#   theme_id: "[your-theme-id]"
+#   store: [your-store].myshopify.com
+#   ignores:
+#     -themekit.ignores
+#   ignore_files:
+#       - config/settings_data.json
+#       - config/settings_schema.json
+
+# production:
+#   password: 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
+#   theme_id: 107663261864
+#   store: https://the-taproom-test-store.myshopify.com
+#   timeout: 100s
+#   readonly: true
