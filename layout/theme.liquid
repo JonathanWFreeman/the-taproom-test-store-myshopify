@@ -107,12 +107,11 @@
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
+  {{ content_for_header }}
+
   {% include 'css-variables' %}
   {% include 'js-variables' %}
   {{ 'main.min.css' | asset_url | stylesheet_tag }}
-  {{ 'index.min.js' | asset_url | script_tag }}
-
-  {{ content_for_header }}
 </head>
 
 <body class="template-{{ request.page_type | handle }}">
@@ -143,5 +142,6 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
+  {{ 'index.min.js' | asset_url | script_tag }}
 </body>
 </html>
